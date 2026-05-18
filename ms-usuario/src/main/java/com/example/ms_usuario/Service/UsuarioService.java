@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.example.ms_usuario.Client.AmigosFeignClient;
 import com.example.ms_usuario.Client.BibliotecaFeignClient;
 import com.example.ms_usuario.Client.NotificacionFeignClient;
@@ -78,7 +77,5 @@ public class UsuarioService {
     public Usuario actualizarUsuario(Usuario usu){
         return repo.save(usu);
     }
-
-
 
 }
