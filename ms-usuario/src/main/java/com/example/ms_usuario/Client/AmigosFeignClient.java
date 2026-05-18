@@ -8,7 +8,7 @@ import com.example.ms_usuario.DTO.AmigosDTO;
 
 @FeignClient(
     name = "Amigos",
-    url = "localhost:8087"
+    url = "http://localhost:8087"
 )
 public interface AmigosFeignClient {
     @GetMapping("/api/v1/amigos/usuario/{id}")

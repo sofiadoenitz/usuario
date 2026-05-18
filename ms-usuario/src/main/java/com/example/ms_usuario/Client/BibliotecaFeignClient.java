@@ -8,7 +8,7 @@ import com.example.ms_usuario.DTO.BibliotecaDTO;
 
 @FeignClient(
     name = "Biblioteca",
-    url = "localhost:8081"
+    url = "http://localhost:8081"
 )
 public interface BibliotecaFeignClient {
     @GetMapping("/api/v1/biblioteca/usuario/{id}")
