@@ -44,7 +44,7 @@ public class UsuarioController {
     //Actualizar
     @PutMapping("/{id}")
     public Usuario actualizar(@PathVariable Long id, @RequestBody Usuario usu){
-        return serv.actualizarUsuario(id, usu);
+        return serv.actualizarUsuario(usu);
     }
 
     //Buscar por id
