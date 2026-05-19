@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.example.ms_usuario.DTO.BibliotecaDTO;
+import com.example.ms_usuario.Model.DTO.BibliotecaDTO;
 
 @FeignClient(
     name = "Biblioteca",

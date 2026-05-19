@@ -1,4 +1,4 @@
-package com.example.ms_usuario.DTO;
+package com.example.ms_usuario.Model.DTO;
 
 import lombok.Data;
 

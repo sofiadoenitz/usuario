@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import com.example.ms_usuario.Client.AmigosFeignClient;
 import com.example.ms_usuario.Client.BibliotecaFeignClient;
 import com.example.ms_usuario.Client.NotificacionFeignClient;
-import com.example.ms_usuario.DTO.AmigosDTO;
-import com.example.ms_usuario.DTO.BibliotecaDTO;
-import com.example.ms_usuario.DTO.NotificacionDTO;
+import com.example.ms_usuario.Model.DTO.AmigosDTO;
+import com.example.ms_usuario.Model.DTO.BibliotecaDTO;
+import com.example.ms_usuario.Model.DTO.NotificacionDTO;
 import com.example.ms_usuario.Model.Usuario;
 import com.example.ms_usuario.Repository.UsuarioRepository;
 
@@ -32,14 +32,9 @@ public class UsuarioService {
     Map<String, Object> respuesta = new HashMap<>();
     if(usuario != null){
 
-        BibliotecaDTO biblioteca =
-                bibliotecaClient.obtenerBiblioteca(id);
-
-        AmigosDTO amigos =
-                amigosClient.obtenerAmigos(id);
-
-        NotificacionDTO notificacion =
-                notificacionClient.obtenerNotificacion(id);
+        BibliotecaDTO biblioteca = bibliotecaClient.obtenerBiblioteca(id);
+        AmigosDTO amigos = amigosClient.obtenerAmigos(id);
+        NotificacionDTO notificacion = notificacionClient.obtenerNotificacion(id);
 
         respuesta.put("usuario", usuario);
         respuesta.put("biblioteca", biblioteca);
