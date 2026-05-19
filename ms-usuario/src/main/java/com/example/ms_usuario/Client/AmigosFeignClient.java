@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.ms_usuario.Model.DTO.AmigosDTO;
 
 @FeignClient(
-    name = "Amigos",
+    name = "ms-amigos",
     url = "http://localhost:8087"
 )
 public interface AmigosFeignClient {

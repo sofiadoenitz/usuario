@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.ms_usuario.Model.DTO.BibliotecaDTO;
 
 @FeignClient(
-    name = "Biblioteca",
+    name = "ms-biblioteca",
     url = "http://localhost:8081"
 )
 public interface BibliotecaFeignClient {

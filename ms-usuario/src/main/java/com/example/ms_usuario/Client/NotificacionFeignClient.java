@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.ms_usuario.Model.DTO.NotificacionDTO;
 
 @FeignClient(
-    name = "Notificacion",
+    name = "ms-notificaciones",
     url = "http://localhost:8090"
 )
 public interface NotificacionFeignClient {
